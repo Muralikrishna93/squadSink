@@ -36,45 +36,56 @@ body {
 }
 
 /* Carousel */
-.carousel {
-  position: relative;
-  height: 300px;
-  overflow: hidden;
-}
-
-.slides input {
-  display: none;
-}
-
-.slide {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(to right, #4f00bc, #5900ff);
+.carousel-slide-content {
+  height: 400px;
   color: white;
-  display: none;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  flex-direction: column;
-}
-
-.slide .cta {
-  margin-top: 1rem;
-  padding: 10px 20px;
-  background-color: orange;
-  border: none;
-  color: white;
-  cursor: pointer;
-  font-size: 1rem;
-}
-
-#slide1:checked ~ .s1,
-#slide2:checked ~ .s2,
-#slide3:checked ~ .s3 {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
+.carousel-slide-content h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.carousel-slide-content .cta {
+  background-color: #ff5722;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.carousel-slide-content .cta:hover {
+  background-color: #e64a19;
+}
+
+/* Backgrounds for each slide */
+.bg1 {
+  background: url('https://cdn.prod.website-files.com/62876589ec366575fa309b1e/65d65a2a9abbec35593a1394_Angular%20NES%20Announcement.png') no-repeat center center/cover;
+}
+
+.bg2 {
+  background: url('https://www.shutterstock.com/image-photo/python-programming-language-programing-workflow-260nw-1846209262.jpg') no-repeat center center/cover;
+}
+
+.bg3 {
+  background: url('https://i.pinimg.com/736x/fa/e8/62/fae862fff4f6100d000a1c01c4030db0.jpg') no-repeat center center/cover;
+}
+
+.bg4{
+  background: url('https://media.licdn.com/dms/image/v2/D4D12AQEbRgMl6LCbiw/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1681795044585?e=2147483647&v=beta&t=rTAPsipKyparomr-oZg8eRGZAx62ZD-oqOtqiiO2HrU') no-repeat center center/cover;
+}
+
+.bg5{
+  background: url('https://t3.ftcdn.net/jpg/02/14/53/92/360_F_214539232_YnUrtuwUEt84gHuU0qG8l7OwZvH4rnPG.jpg') no-repeat center center/cover;
+}
 .nav {
   position: absolute;
   top: 50%;

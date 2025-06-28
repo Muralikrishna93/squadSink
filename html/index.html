@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <title>AchieversIT Clone</title>
   <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+  
 </head>
 <body>
 
@@ -26,40 +28,54 @@
   </header>
 
   <!-- CAROUSEL -->
-  <section class="carousel">
-    <div class="slides">
-      <input type="radio" name="slide" id="slide1" checked>
-      <input type="radio" name="slide" id="slide2">
-      <input type="radio" name="slide" id="slide3">
-
-      <div class="slide s1">
-        <label for="slide3" class="nav prev">&#10094;</label>
-        <div class="content">
-          <h1>ANGULAR DEVELOPMENT COURSE</h1>
-          <button class="cta">Explore Course</button>
+  
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+        <div class="carousel-slide-content bg1">
+            <h1>ANGULAR DEVELOPMENT COURSE</h1>
+            <button class="cta">Explore Course</button>
         </div>
-        <label for="slide2" class="nav next">&#10095;</label>
-      </div>
-
-      <div class="slide s2">
-        <label for="slide1" class="nav prev">&#10094;</label>
-        <div class="content">
-          <h1>PYTHON DEVELOPMENT COURSE</h1>
-          <button class="cta">Explore Course</button>
         </div>
-        <label for="slide3" class="nav next">&#10095;</label>
-      </div>
-
-      <div class="slide s3">
-        <label for="slide2" class="nav prev">&#10094;</label>
-        <div class="content">
-          <h1>FULL STACK DEVELOPMENT COURSE</h1>
-          <button class="cta">Explore Course</button>
+        <div class="carousel-item">
+        <div class="carousel-slide-content bg2">
+            <h1>PYTHON DEVELOPMENT COURSE</h1>
+            <button class="cta">Explore Course</button>
         </div>
-        <label for="slide1" class="nav next">&#10095;</label>
-      </div>
+        </div>
+        <div class="carousel-item">
+        <div class="carousel-slide-content bg3">
+            <h1>FULL STACK DEVELOPMENT COURSE</h1>
+            <button class="cta">Explore Course</button>
+        </div>
+        </div>
+        <div class="carousel-item">
+        <div class="carousel-slide-content bg4">
+            <h1>AMAZON WEB SERVICES</h1>
+            <button class="cta">Explore Course</button>
+        </div>
+        </div>
+        <div class="carousel-item">
+        <div class="carousel-slide-content bg5">
+            <h1> WEB DEVELOPEMENT COURSE</h1>
+            <button class="cta">Explore Course</button>
+        </div>
+        </div>
+
+        
     </div>
-  </section>
+
+    <!-- Controls -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+    </div>
+
 
   <!-- QUICK COURSES -->
   <section class="cards">
@@ -177,12 +193,12 @@
     <div class="categories-grid">
         
         <div class="category-card">
-        <img src="https://img.icons8.com/color/96/dev.png" alt="DevOps">
+        <img src="https://cdn.create.vista.com/api/media/small/283714502/stock-photo-devops-agile-development-and-optimisation-concept-on-virtual-screen" alt="DevOps">
         <p>DevOps</p>
         </div>
 
         <div class="category-card">
-        <img src="https://img.icons8.com/external-outline-lima-studio/96/external-coding-front-end-development-outline-lima-studio.png" alt="Front-End">
+        <img src="https://www.mindinventory.com/blog/wp-content/uploads/2022/10/frontend-development-tools.png" alt="Front-End">
         <p>Front-End</p>
         </div>
 
@@ -197,22 +213,22 @@
         </div>
 
         <div class="category-card">
-        <img src="https://img.icons8.com/external-flaticons-lineal-color-flat-icons/96/external-programming-digital-nomading-flaticons-lineal-color-flat-icons.png" alt="Program & Frameworks">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5SiLNu2RaWgHu8oXQMqxbUeYUeV0wxeQQqQ&s" alt="Program & Frameworks">
         <p>Program & Frame<br>Works</p>
         </div>
 
         <div class="category-card">
-        <img src="https://img.icons8.com/external-flat-juicy-fish/96/external-database-coding-and-development-flat-flat-juicy-fish.png" alt="Data Types">
+        <img src="https://www.shutterstock.com/image-photo/businessman-using-computer-document-management-600nw-2016196394.jpg" alt="Data Types">
         <p>Data Types</p>
         </div>
 
         <div class="category-card">
-        <img src="https://img.icons8.com/external-outline-juicy-fish/96/external-classroom-learning-outline-outline-juicy-fish.png" alt="Software Testing">
+        <img src="https://media.istockphoto.com/id/1465316262/photo/businessman-inspecting-paperwork-document-of-business-data-analysis-working-management-report.jpg?s=612x612&w=0&k=20&c=kpD3aZWVIH0VfOwdG4RX5vPRFPMftg5Dp4xCVo3Lito=" alt="Software Testing">
         <p>Software Testing</p>
         </div>
 
         <div class="category-card">
-        <img src="https://img.icons8.com/external-wanicon-lineal-color-wanicon/96/external-cloud-computing-cloud-computing-wanicon-lineal-color-wanicon.png" alt="Cloud Computing">
+        <img src="https://media.istockphoto.com/id/1399936043/photo/data-transfer-cloud-computing-technology-concept-there-is-a-large-prominent-cloud-icon-in-the.jpg?s=612x612&w=0&k=20&c=pSrIUkBc6Yf1gT7G0SnjQL4T-PjbC6KmFZavud7To2I=" alt="Cloud Computing">
         <p>Cloud Computing</p>
         </div>
 
@@ -222,7 +238,7 @@
         </div>
 
         <div class="category-card">
-        <img src="https://img.icons8.com/external-others-bomsymbols-/96/external-Artificial-Intelligence-artificial-intelligence-others-bomsymbols--4.png" alt="AI">
+        <img src="https://media.istockphoto.com/id/1452604857/photo/businessman-touching-the-brain-working-of-artificial-intelligence-automation-predictive.jpg?s=612x612&w=0&k=20&c=GkAOxzduJbUKpS2-LX_l6jSKtyhdKlnPMo2ito4xpR4=" alt="AI">
         <p>Artificial Intelligence</p>
         </div>
 
@@ -232,7 +248,7 @@
         </div>
 
         <div class="category-card">
-        <img src="https://img.icons8.com/external-outline-satawat-anukul/96/external-big-data-data-analytics-outline-outline-satawat-anukul.png" alt="Big Data">
+        <img src="https://media.istockphoto.com/id/1448152453/vector/big-data-technology-and-data-science-illustration-data-flow-concept-querying-analysing.jpg?s=612x612&w=0&k=20&c=To0lhCrVmDYdSkOUOGxGsjlYe0buj_wwGCDqYhF9p2o=" alt="Big Data">
         <p>Big Data</p>
         </div>
 
@@ -304,6 +320,8 @@
     <p>📩 Request A Call Back</p>
     <p>💬 Chat With Us!</p>
   </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
 
 </body>
 </html>
